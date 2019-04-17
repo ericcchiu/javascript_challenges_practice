@@ -10,7 +10,7 @@ TRY solving it with non-mutative recursion, only after you’ve solved it using 
 /** For Loop **/
 const findPerson = (string, array) => {
   for (let person of array) {
-    if (person.name === string) return true; 
+    if (person.name === string) return person.hobby; 
   }
   return false
 }
