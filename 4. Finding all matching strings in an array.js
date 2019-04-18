@@ -20,8 +20,6 @@ const filterLength = (number, arr) => {
 
 
 /*** Logging ***/
-
-
 const arr = [ "a", "ab", "abc", "abcd" ]; 
 const arr2 = ['x', 'hello', 'xenophile'];
 console.log(filterLength(3, arr));
