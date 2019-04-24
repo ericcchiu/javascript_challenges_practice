@@ -19,7 +19,14 @@
 // }
 
 /** ES6 **/
-const concatArrays = (arrays) => [].concat(...arrays);
+// const concatArrays = (arrays) => [].concat(...arrays);
+
+/** Recursive Solution **/
+const concatArrays = (arrays, output = []) => {
+  if (arrays.length === 0) return output; 
+  arrays.forEach(item => output.push(item));
+  return arrays[0].concat(concatArrays(arrays.slice(1)));
+}
 
 
 const arr1 = [[10, 20], [30], []];
