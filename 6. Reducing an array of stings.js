@@ -8,22 +8,22 @@
 */
 
 /** For Loop **/
-const concatStrings = (strings, str = '') => {
-    for (let char of strings) {
-        str += char;
-    }
-    return str;
-};
+// const concatStrings = (strings, str = '') => {
+//     for (let char of strings) {
+//         str += char;
+//     }
+//     return str;
+// };
 
 /*** Recursion ***/
-// const concatStrings = (strings, str ='') => { 
+const concatStrings = (strings, str ='') => { 
    
-//     if (strings.length === 0) return ""; 
+    if (strings.length === 0) return ""; 
   
-//     str += strings[0];
+    str += strings[0];
   
-//     return concatStrings(strings.slice(1), str);
-// };
+    return str + concatStrings(strings.slice(1));
+};
 
 const strings = ['a', 'b', 'c', 'd']; 
 const empty = []; 
