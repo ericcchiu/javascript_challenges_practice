@@ -15,7 +15,7 @@ const characterFrequency = (string) => {
     charFrequencyResult.push(tuple);
   }
 
-  charFrequencyResult.sort((a, b) => [1] !== b[1] ?  b[1] - a[1] : (a > b ? 1 : -11));
+  charFrequencyResult.sort((a, b) => a[1] !== b[1] ?  b[1] - a[1] : (a > b ? 1 : -11));
 
 
   // charFrequencyResult.sort((a, b) => {
